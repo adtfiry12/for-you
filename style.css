@@ -15,8 +15,8 @@ body {
 
 .container {
     background-color: white;
-    height: 48vh;
-    width: 48vh;
+    height: 320px;
+    width: 320px;
     text-align: center;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -101,8 +101,8 @@ body {
 
 .content {
     background-color: white;
-    height: 85vh;
-    width: 50vh;
+    height: 600px;
+    width: 320px;
     text-align: justify;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -117,7 +117,7 @@ body {
 .content p {
     font-size: 9px;
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .lanjut {
