@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For you</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="container">
+        <img class="animate__animated animate__bounce" src="https://media.tenor.com/2csFlkJ3TyAAAAAj/tkthao219-bubududu.gif" alt="">
+        <h1 class="animate__animated animate__pulse ">kamu suka aku tidaa?🤔</h1>
+        <div>
+            <a class="yes animate__animated animate__bounce" href="iya.html" class="yes">iyaa</a>
+            <a href="#" id="openLink" class="no">noo</a>
+        </div>
+
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <img class="animate__animated animate__bounceIn" src="https://media.tenor.com/qqRoBpnjOrIAAAAi/tkthao219-bubududu.gif" alt="">
+            <p>kenapa no?, harus suka, gabole tidak, wajib iyaa🥹 </p>
+            <a href="#" id="closeLink">iyaa</a>
+        </div>
+    </div>
+    <script>
+        const modal = document.getElementById("myModal");
+        const openLink = document.getElementById("openLink");
+        const closeLink = document.getElementById("closeLink");
+
+        openLink.onclick = (e) => {
+            e.preventDefault(); 
+            modal.style.display = "block";
+        };
+
+        closeLink.onclick = (e) => {
+            e.preventDefault();
+            modal.style.display = "none";
+        };
+
+        window.onclick = (event) => {
+            if (event.target === modal) modal.style.display = "none";
+        };
+    </script>
+</body>
+</html>
